@@ -36,5 +36,11 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 ## Usage
 
+```md
+![alt text](images/Note%20Taker%201.png)
+```
 
+```md
+![alt text](images/Note%20Taker%202.png)
+```
 
