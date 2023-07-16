@@ -2,10 +2,10 @@
 challenge 11
 
 ## Description
-The Note-Taker app is a backend project designed to create and delete notes. The project uses express.js to be able to send get, post and delete requests to a localhost server. Starter coded was given in order to begin inputting the routes and requests needed. Through this project process, I learned about how to create GET and POST requests and had the opprotunity to look into DELET request all using the CRUD model.
+The Note-Taker app is a backend project designed to create and delete notes. The project uses express.js to be able to send get, post and delete requests to a localhost server. Starter coded was given in order to begin inputting the routes and requests needed. Through this project process, I learned about how to create GET and POST requests and had the opprotunity to look into DELETE request all using the CRUD model.
 
 ## Table of Contents
-[Overview](#overview)
+[Overview](#overview)<br>
 [Usage](#usage)
 
 
@@ -20,6 +20,7 @@ I WANT to be able to write and save notes<br>
 SO THAT I can organize my thoughts and keep track of tasks I need to complete <br>
 
 Acceptance Criteria<br>
+
 GIVEN a note-taking application<br>
 WHEN I open the Note Taker<br>
 THEN I am presented with a landing page with a link to a notes page<br>
