@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const { v4: uuidv4 } = require('uuid');
 const fs = require ("fs");
 
 // get request api/notes
@@ -13,6 +14,7 @@ router.post('/api/notes', (req, res) => {
     const feedback = {
       title: req.body.title,
       text: req.body.text,
+      id: uuidv4(),
     };
     dbJson.push(feedback);
     fs.writeFileSync("db/db.json",JSON.stringify(dbJson));
@@ -22,8 +24,8 @@ router.post('/api/notes', (req, res) => {
   //  delete request for /api/notes/:id
   router.delete('/api/notes/:id', (req, res) => {
     let data = fs.readFileSync("db/db.json", "utf8");
-    const dataJSON =  JSON.parse(data);
-    const updatedNote = dataJSON.filter((note) => { 
+    const jsonData =  JSON.parse(data);
+    const updatedNote = jsonData.filter((note) => { 
       return note.id !== req.params.id;
     });
     fs.writeFileSync("db/db.json",JSON.stringify(updatedNote));
